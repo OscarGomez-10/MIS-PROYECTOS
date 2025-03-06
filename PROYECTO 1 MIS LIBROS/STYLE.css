@@ -1,0 +1,51 @@
+.eti1 {
+  color: #d35400;
+  text-align: center;
+}
+hr {
+  height: 2px;
+  background-color: #d35400;
+  border: 0px;
+  margin: 20px;
+}
+div {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 12px;
+  border: 2px solid #56a6ec;
+}
+#div1 {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+  margin-left: 2px;
+}
+#div2 {
+  background-color: #fcf3cf;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 8px;
+  border: 2px solid #f4d03f;
+}
+h2 {
+  color: #1a5276;
+}
+section {
+  border-radius: 20px;
+  width: 35%;
+  border: 2px solid #dddddd;
+  margin: auto;
+}
+.color {
+  text-decoration-color: black;
+  margin-left: 20px;
+}
+.eti2 {
+  color: #2980b9;
+}
+a {
+  text-decoration: none;
+  color: #d35400;
+}

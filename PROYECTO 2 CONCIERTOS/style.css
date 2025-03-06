@@ -1,0 +1,65 @@
+.contenedor {
+    background-color: rgba(18, 20, 20, 0.11);
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.contenedor-conciertos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    background-size: cover;
+    max-width: 100%;
+    background-position: center;
+}
+
+.banner {
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+    background-size: cover;
+    max-width: 100%;
+    background-position: center;
+}
+
+.boton {
+    margin: 0px;
+    border-radius: 50px;
+    background-color: yellow;
+    padding: 10px;
+    width: 80%;
+}
+
+.textos {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+p {
+    color: white;
+}
+
+ul {
+    color: white;
+    padding: 0;
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
