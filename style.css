@@ -26,6 +26,7 @@ padding-bottom: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-start: auto;
     gap: 10px;
+    align-items: center;
 }
 
 
@@ -39,6 +40,7 @@ padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    align-items: center;
     
 }
 
@@ -46,12 +48,9 @@ padding-bottom: 20px;
     height: 200px;
     border-radius: 600px;
     width: 200px;
-    margin-left: 215px;
     display: grid;
     background-size: cover;
-    position: center;
 }
-
 a {
     color: #deeaed;
     font-size: 20px;
