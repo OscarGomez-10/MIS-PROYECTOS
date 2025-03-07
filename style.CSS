@@ -1,0 +1,59 @@
+h2 {
+    color: #ebeaf587;
+    text-align: center;
+    margin: 10px;
+}
+
+.eti1 {
+    text-align: center;
+    color: #3d387887;
+    padding-top: 35px;
+    margin: 0px;
+}
+.contenedor-padre {
+    background-color: #deeaed;
+    height: auto;
+    border-radius: 50px;
+    
+}
+.head{
+background-color:#deeaed ;
+padding-bottom: 20px;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: auto;
+    gap: 10px;
+}
+
+
+.contenedor-hijo {
+    background-color: #3d3878;
+    border-radius: 50px;
+    color: #deeaed;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+}
+
+.div-img {
+    height: 200px;
+    border-radius: 600px;
+    width: 200px;
+    margin-left: 215px;
+    display: grid;
+    background-size: cover;
+    position: center;
+}
+
+a {
+    color: #deeaed;
+    font-size: 20px;
+    text-decoration: none;
+}
