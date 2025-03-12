@@ -97,7 +97,6 @@
 .tercer-espacio-parte-1 {
   border: solid 1px rgb(105, 103, 107);
   text-align: center;
-
 }
 
 .imagen-proyectos {
@@ -130,80 +129,79 @@
 }
 
 /*---------------------responsibidad------------*/
-@media (max-width:500px) {
+@media (max-width: 600px) {
   .head {
-    display: grid;
-    grid-template-columns: 3fr;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
   }
-
   .contenedor-primer-espacio {
     display: grid;
     grid-template-columns: 1fr;
   }
-
+  .Primer-espacio-parte-1 {
+    text-align: center;
+    align-items: center;
+  }
   .Primer-espacio-parte-2 {
     text-align: center;
     align-items: center;
   }
-
   .parrafo-1 {
     padding: 0px;
     text-align: center;
     padding-bottom: 10px;
   }
-
   .boton-0 {
     margin-bottom: 10px;
   }
 
   .contenedor-tercer-espacio {
-    display: grid;
     grid-template-columns: 1fr;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 20px;
   }
 
   .tercer-espacio-parte-1 {
     font-size: 26px;
   }
-
-  .imagen-proyectos {
-    width: 100%;
+  .etiqueta-3{
+    font-size: 35px;
   }
+  
 }
-@media (max-width:800px) {
-  .contenedor-primer-espacio{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .Primer-espacio-parte-1{
-    text-align: center;
-  }
-  .Primer-espacio-parte-2{
+
+
+
+
+@media (max-width: 300px) {
+  .Primer-espacio-parte-1 {
     text-align: center;
     align-items: center;
   }
-  .parrafo-1{
-    padding: 0px;
-    text-align: center;
-    padding-bottom: 10px;
+  .imagen-1 {
+    margin-top: 40px;
+    max-width: 300px;
   }
-  .boton-0{
-    margin-bottom: 10px;
+  .etiqueta-1 {
+    font-size: 40px;
+  }
+  .etiqueta-2 {
+    font-size: 30px;
+  }
+  .etiqueta-3 {
+    font-size: 35px;
+  }
+  .parrafo-1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .parrafo-2 {
+    font-size: 30px;
+    padding: 20px;
+  }
+  .parrafo-3 {
+    font-size: 25px;
   }
   .contenedor-tercer-espacio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
-  .tercer-espacio-parte-1 {
-    font-size: 26px;
-  }
-
-  .imagen-proyectos {
-    width: 100%;
+    padding: 10px;
   }
 }
