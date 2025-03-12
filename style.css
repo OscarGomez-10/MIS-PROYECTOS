@@ -58,8 +58,9 @@ a {
 }
 @media (max-width:500px){
     .contenedor-proyectos{
-        grid-template-columns:1fr;
-        
-    }
-        
+        grid-template-columns:1fr;  
+    }    
+}
+@media(max-width:1000px){
+    grid-template-columns:1fr 1fr
 }
