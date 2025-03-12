@@ -129,7 +129,7 @@
 }
 
 /*---------------------responsibidad------------*/
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .head {
     display: flex;
     flex-direction: column;
