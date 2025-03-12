@@ -62,8 +62,10 @@ a {
     }    
 }
 @media(max-width:600px){
+    .contenedor-proyectos{
     grid-template-columns:1fr 1fr
-}
+}}
 @media(max-width:800px){
+    .contenedor-proyectos{
     grid-template-columns:1fr 1fr
-}
+}}
