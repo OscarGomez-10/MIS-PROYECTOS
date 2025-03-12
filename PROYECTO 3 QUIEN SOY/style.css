@@ -56,8 +56,6 @@
 /* ----------------------seccion 2-------------------*/
 .contenedor-segundo-espacio {
   background-color: #ff411d;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -162,6 +160,41 @@
   .contenedor-tercer-espacio {
     display: grid;
     grid-template-columns: 1fr;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .tercer-espacio-parte-1 {
+    font-size: 26px;
+  }
+
+  .imagen-proyectos {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
+  .contenedor-primer-espacio{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Primer-espacio-parte-1{
+    text-align: center;
+  }
+  .Primer-espacio-parte-2{
+    text-align: center;
+    align-items: center;
+  }
+  .parrafo-1{
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .boton-0{
+    margin-bottom: 10px;
+  }
+  .contenedor-tercer-espacio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 70px;
     padding-right: 70px;
   }
