@@ -61,7 +61,7 @@ a {
     grid-template-columns:1fr;  
     }    
 }
-@media(max-width:600px){
+@media(min-width:501px)and(max-width:600px){
     .contenedor-proyectos{
     grid-template-columns:1fr 1fr;
 }}
