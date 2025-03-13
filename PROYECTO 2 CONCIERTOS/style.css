@@ -1,9 +1,12 @@
 .contenedor {
-    background-color: rgba(18, 20, 20, 0.11);
+    background-color: black;
     display: grid;
     border-radius: 10px;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
+}
+*{
+    background-color:black;
 }
 
 .contenedor-conciertos {
