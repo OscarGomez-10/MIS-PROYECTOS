@@ -60,7 +60,7 @@ a {
     .contenedor-proyectos{
     grid-template-columns:1fr;
 }}
-@media (max-width:900px){
+@media (min-width:601px) and (max-width:900px){
     .contenedor-proyectos{
     grid-template-columns:1fr 1fr;
 }}
