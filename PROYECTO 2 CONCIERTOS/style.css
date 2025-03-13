@@ -1,14 +1,10 @@
 .contenedor {
-    background-color:;
+    background-color:#808080;
     display: grid;
     border-radius: 10px;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
 }
-*{
-    background-color:black;
-}
-
 .contenedor-conciertos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
