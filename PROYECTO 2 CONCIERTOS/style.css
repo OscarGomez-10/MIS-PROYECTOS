@@ -4,6 +4,7 @@
     border-radius: 10px;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
+    height:100%;
 }
 .contenedor-conciertos {
     display: grid;
