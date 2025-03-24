@@ -1,0 +1,79 @@
+.contenedor {
+    background-color:  #64749c ;
+}
+
+.skill-1{
+    background-color: #fccc8c ;
+    width: 90%;
+    height: 15px;
+
+}
+.skill-2 {
+    background-color:  #fccc8c ;
+    width: 70%;
+    height: 15px;
+}
+
+.skill-3 {
+    background-color:  #fccc8c ;
+    width: 20%;
+    height: 15px;
+}
+
+.skill-4 {
+    background-color:  #fccc8c ;
+    width: 50%;
+    height: 15px;
+}
+
+.skill-5 {
+    background-color:  #fccc8c ;
+    width: 10%;
+    height: 15px;
+}
+
+.skill-6 {
+    background-color:  #fccc8c ;
+    width: 45%;
+    height: 15px;
+}
+.expertise-1{
+height: 15px;
+width: 20%;
+background-color:  #7c9cd4 ;
+}
+.expertise-2{
+height: 15px;
+width: 40%;
+background-color:  #7c9cd4 ;
+}
+.expertise-3{
+height: 15px;
+width: 80%;
+background-color:  #7c9cd4 ;
+}
+.expertise-4{
+height: 15px;
+width: 50%;
+background-color:  #7c9cd4 ;
+}
+.languages-1{
+    height: 15px;
+    width: 40%;
+    background-color:   #8cc48c  ;
+}
+.languages-2{
+    height: 15px;
+    width: 20%;
+    background-color:   #8cc48c  ;
+}
+.languages-3{
+    height: 15px;
+    width: 30%;
+    background-color:   #8cc48c  ;
+}
+.languages-4{
+    height: 15px;
+    width: 10%;
+    background-color:   #8cc48c  ;
+}
