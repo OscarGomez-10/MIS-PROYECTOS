@@ -35,7 +35,7 @@ padding-bottom: 20px;
 .contenedor-hijo {
     background-color: #3d3878;
     border-radius: 50px;
-    color: #deeaed;
+    background: linear-gradientrgba(0,212,255,1) 100%) 0%, rgba(9,9,121,1) 35%, (90deg, rgba(2,0,36,1);
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
