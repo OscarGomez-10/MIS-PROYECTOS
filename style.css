@@ -12,7 +12,7 @@ h2 {
 }
 .contenedor-padre {
    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+ background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
     height: auto;
     border-radius: 50px;
     
@@ -35,7 +35,7 @@ padding-bottom: 20px;
 .contenedor-hijo {
     background-color: #3d3878;
     border-radius: 50px;
-background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 65%, rgba(2,0,36,1) 100%);
+background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
