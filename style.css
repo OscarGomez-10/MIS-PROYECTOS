@@ -19,7 +19,7 @@ h2 {
 }
 .head{
 background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+ background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
 padding-bottom: 20px;
 }
 
