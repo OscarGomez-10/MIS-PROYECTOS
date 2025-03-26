@@ -3,26 +3,26 @@ h2 {
     margin: 10px;
     color: #ffffff;
 }
-body{
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-}
+
 .eti1 {
     text-align: center;
     color: #ffffff;
     padding-top: 35px;
     margin: 0px;
 }
+
 .contenedor-padre {
-   background: rgb(2,0,36);
- background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
     height: auto;
     border-radius: 50px;
-    
+
 }
-.head{
-background: rgb(2,0,36);
- background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-padding-bottom: 20px;
+
+.head {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    padding-bottom: 20px;
 }
 
 .contenedor-proyectos {
@@ -31,7 +31,7 @@ padding-bottom: 20px;
     grid-column-start: auto;
     gap: 20px;
     align-items: center;
-       padding-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
@@ -39,7 +39,7 @@ padding-bottom: 20px;
 .contenedor-hijo {
     background-color: #3d3878;
     border-radius: 50px;
-background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
@@ -47,7 +47,7 @@ background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255
     flex-direction: column;
     gap: 4px;
     align-items: center;
-   
+
 }
 
 .div-img {
@@ -57,15 +57,18 @@ background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255
     display: grid;
     background-size: cover;
 }
+
 a {
     color: #deeaed;
     font-size: 20px;
     text-decoration: none;
 }
-@media(max-width:600px){
-    .contenedor-proyectos{
-    grid-template-columns:1fr;
-}}
+
+@media(max-width:600px) {
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+}
 @media (min-width:601px) and (max-width:900px){
     .contenedor-proyectos{
     grid-template-columns:1fr 1fr;
