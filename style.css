@@ -3,7 +3,9 @@ h2 {
     margin: 10px;
     color: #ffffff;
 }
-
+body{
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+}
 .eti1 {
     text-align: center;
     color: #ffffff;
