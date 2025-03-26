@@ -29,6 +29,8 @@ padding-bottom: 20px;
     grid-column-start: auto;
     gap: 10px;
     align-items: center;
+       padding-left: 20px;
+    padding-rigth: 20px;
 }
 
 
@@ -43,8 +45,7 @@ background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255
     flex-direction: column;
     gap: 4px;
     align-items: center;
-    padding-left: 20px;
-    padding-rigth: 20px;
+   
 }
 
 .div-img {
