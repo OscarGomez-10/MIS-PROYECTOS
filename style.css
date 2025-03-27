@@ -39,6 +39,7 @@ h2 {
 .contenedor-hijo {
     background-color: #3d3878;
     border-radius: 50px;
+    margin-top: 5px;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     width: 100%;
     text-align: center;
