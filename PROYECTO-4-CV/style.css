@@ -7,11 +7,10 @@
 }
 
 .contenedor-padre {
-    padding-right: 250px;
-    padding-left: 250px;
+    padding-right: 300px;
+    padding-left: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 /* -----------------------encabezado--------------------------------- */
@@ -103,6 +102,7 @@
 .contenedor-central-parte-2 {
     background-color: white;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .titulo-imagen-parte-2 {
@@ -148,6 +148,7 @@
 
 .parrafo-2 {
     margin-top: 5px;
+    margin-bottom: 14px;
 }
 
 .etiqueta-6 {
@@ -156,7 +157,7 @@
 }
 
 .ultimas-etiquetas {
-    text-align: center;
+    padding-left: 100px;
 }
 
 /* -----------------------------------footer------------------------- */
@@ -262,8 +263,9 @@
     }
 
     .parrafo-2 {
-        padding-left: 25px;
         text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 
     .derecha {
@@ -280,6 +282,8 @@
 
     .ultimas-etiquetas {
         margin-bottom: 20px;
+        padding: 0px;
+        text-align: center;
     }
 
     .footer {
@@ -403,8 +407,8 @@
 }
 @media (min-width:901px) and (max-width:1300px) {
     .contenedor-padre {
-        padding-right: 100px;
-        padding-left:100px;
+        padding-right: 50px;
+        padding-left:50px;
         padding-top: 25px;
         padding-bottom: 25px;
     }
