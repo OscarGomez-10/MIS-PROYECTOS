@@ -217,6 +217,8 @@
     .titulo-imagen {
         display: flex;
         justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 5px;
     }
 
     .contenedor-lineas {
@@ -292,6 +294,7 @@
 
     .footer-partes {
         justify-content: center;
+        padding: 0px;
     }
 }
 
@@ -400,6 +403,8 @@
 
     .ultimas-etiquetas {
         margin-bottom: 20px;
+        padding: 0px;
+        text-align: center;
     }
     .footer-partes {
         padding-left: 0px;
