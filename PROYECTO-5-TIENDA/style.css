@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ________________________________________________encabezado_______________________ */
+.img-fondo {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding-left: 50px;
+  height: 80px;
+  background: linear-gradient(130deg, white 98%, transparent 0, 1%, #f4c40c 100%);
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 50px;
+}
+
+.eti-head:hover {
+  color: #f4c40c;
+}
+
+strong {
+  color: white;
+}
+
+.titulos-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulos1 {
+  display: flex;
+  padding-top: 50px;
+}
+
+.titulos2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  height: 40px;
+  padding-left: 75px;
+  padding-right: 75px;
+  background: linear-gradient(130deg, transparent 20%, #f4c40c 10%, #f4c40c 80%, transparent 20%);
+}
+
+/* ___________________________________contenedor central_______________ */
+.contenedor-central {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.contenedor-central-parte-1 {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buscador-general {
+  padding-top: 40px;
+  display: flex;
+  padding-left: 30px;
+}
+
+.buscador {
+  width: 60%;
+  background-color: #ccc8c8;
+  border: 1px solid #bebdbd;
+  color: #979797;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#buscador {
+  background-color: #ccc8c8;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.seccion-filtro {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contenedor-barra {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 57%;
+  height: 14px;
+  margin-left: 30px;
+}
+
+.barra {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to right, #f4c40c, #f4c40c);
+  border-radius: 50px;
+}
+
+.circulo {
+  position: relative;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: 2px solid #f4c40c;
+  border-radius: 50%;
+}
+
+.eti-filtro {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.linea {
+  width: 10%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.eti-precio {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.boton-precio {
+  display: grid;
+  text-align: left;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+}
+
+.boton1 {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #f4c40c;
+  color: white;
+  width: 45%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  border: none;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.eti-categorias {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.eti-precio-productos {
+  padding-left: 30px;
+}
+
+.linea-categorias {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.precio-rojo {
+  color: red;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #2c2c2c;
+  color: #848484;
+  width: 100%;
+}
+
+.titulo-footer {
+  color: #f4c40c;
+}
+
+.footer-parte-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px
+}
+
+.parrafo-footer {
+  padding-top: 20px;
+}
+
+.parrafo-footer-3 {
+  padding: 20px 0 20px 0;
+}
+
+.linea-footer {
+  background-color: #848484;
+  height: 1px;
+  border: none;
+}
+
+.numeros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 30px;
+}
+
+.input-footer {
+  width: 100%;
+  background-color: #242424;
+  border: none;
+  color: #979797;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+#mensaje {
+  padding-bottom: 40px;
+}
+
+.boton-footer {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #f4c40c;
+  color: white;
+  width: 45%;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+}
+
+.titulo-footer-2 {
+  color: white
+}
+
+.strong {
+  color: #848484;
+}
