@@ -27,7 +27,13 @@ header {
   background-color: white;
   padding-left: 50px;
   height: 80px;
-  background: linear-gradient(130deg, white 98%, transparent 0, 1%, #f4c40c 100%);
+  background: linear-gradient(
+    130deg,
+    white 98%,
+    transparent 0,
+    1%,
+    #f4c40c 100%
+  );
 }
 
 .opciones {
@@ -65,7 +71,13 @@ strong {
   height: 40px;
   padding-left: 75px;
   padding-right: 75px;
-  background: linear-gradient(130deg, transparent 20%, #f4c40c 10%, #f4c40c 80%, transparent 20%);
+  background: linear-gradient(
+    130deg,
+    transparent 20%,
+    #f4c40c 10%,
+    #f4c40c 80%,
+    transparent 20%
+  );
 }
 
 /* ___________________________________contenedor central_______________ */
@@ -76,9 +88,6 @@ strong {
 
 .contenedor-central-parte-1 {
   background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .buscador-general {
@@ -201,8 +210,118 @@ strong {
 
 .precio-rojo {
   color: red;
+  font-size: 15px;
+}
+/* ___________________________________contenedor central parte 2_______________________________________ */
+.contenedor-central-parte-2 {
+  padding-left: 40px;
+}
+.central-parte-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 0 0;
+  align-items: center;
 }
 
+.input-parte-1 {
+  height: 40px;
+  border: 1px solid #848484;
+  outline: none;
+  background-color: #f4f4f4;
+  padding: 0 0 0 20px;
+}
+.eti-parte-1 {
+  color: #848484;
+}
+.seccion-herramientas {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  padding-top: 50px;
+}
+.img-herramienta-especial {
+  width: 350px;
+  position: relative;
+  border: 1px solid #f4f4f4;
+  background: linear-gradient(
+    310deg,
+    white 88%,
+    transparent 0,
+    1%,
+    #f4c40c 12%
+  );
+}
+.palabra-diagonal {
+  position: absolute;
+  color: white;
+  transform: rotate(-45deg);
+  text-align: center;
+  padding-top: 15px;
+}
+.img-herramienta-1 {
+  height: 200px;
+  width: 350px;
+  position: relative;
+  border: 1px solid #f4f4f4;
+}
+.herramienta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.seccion-precios {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.precios {
+  width: 350px;
+}
+.clasificacion {
+  display: flex;
+  color: #f4c40c;
+}
+.estrella-precio {
+  display: flex;
+  justify-content: space-between;
+}
+.estrella{
+font-size: 15px;
+}
+.linea-herramientas {
+  margin: 10px 0 10px 0;
+}
+.nombre-herramientas {
+  padding-top: 10px;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px 0 40px 0;
+}
+.botones-centrales{
+width: 350px;
+}
+.boton-central-1{
+color:#bebdbd;
+outline: none;
+height: 40px;
+width: 40px;
+border: none;
+}
+.boton-central-1:hover{
+color:#bebdbd;
+outline: none;
+height: 40px;
+width: 40px;
+background-color:#f4c40c;
+border: none;
+}
+/* _________________________________footer ____________________________________________________________-*/
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -218,7 +337,7 @@ strong {
 .footer-parte-1 {
   display: flex;
   flex-direction: column;
-  padding: 40px
+  padding: 40px;
 }
 
 .parrafo-footer {
@@ -269,9 +388,12 @@ strong {
 }
 
 .titulo-footer-2 {
-  color: white
+  color: white;
 }
 
 .strong {
   color: #848484;
+}
+.numeros-footer{
+font-size: 38px;
 }
