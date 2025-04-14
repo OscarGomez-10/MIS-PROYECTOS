@@ -97,7 +97,6 @@ strong {
 }
 
 .buscador {
-  width: 60%;
   background-color: #ccc8c8;
   border: 1px solid #bebdbd;
   color: #979797;
@@ -124,8 +123,7 @@ strong {
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 57%;
-  height: 14px;
+  width: 70%;
   margin-left: 30px;
 }
 
@@ -167,13 +165,14 @@ strong {
 .eti-precio {
   padding-left: 30px;
   padding-top: 20px;
+  font-size: 12px;
 }
 
 .boton-precio {
   display: grid;
   text-align: left;
   align-items: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .boton1 {
@@ -181,7 +180,7 @@ strong {
   text-decoration: none;
   background-color: #f4c40c;
   color: white;
-  width: 45%;
+  width: 55%;
   height: 100%;
   text-align: center;
   align-items: center;
@@ -213,13 +212,13 @@ strong {
   font-size: 15px;
 }
 /* ___________________________________contenedor central parte 2_______________________________________ */
-.contenedor-central-parte-2 {
-  padding-left: 40px;
+.contenedor-central-parte-2{
+padding: 0px 30px 0px 30px;
 }
 .central-parte-1 {
   display: flex;
   justify-content: space-between;
-  padding: 40px 40px 0 0;
+  padding: 40px 0 0 0;
   align-items: center;
 }
 
@@ -235,21 +234,16 @@ strong {
 }
 .seccion-herramientas {
   display: flex;
-  gap: 80px;
+  gap: 40px;
   justify-content: center;
   padding-top: 50px;
 }
 .img-herramienta-especial {
   width: 350px;
   position: relative;
-  border: 1px solid #f4f4f4;
-  background: linear-gradient(
-    310deg,
-    white 88%,
-    transparent 0,
-    1%,
-    #f4c40c 12%
-  );
+  border: 1px solid #928080;
+  background: linear-gradient(310deg, white 88%,transparent 0,1%, #f4c40c 12%);
+  height: 250px;
 }
 .palabra-diagonal {
   position: absolute;
@@ -262,7 +256,8 @@ strong {
   height: 200px;
   width: 350px;
   position: relative;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #928080;
+  height: 250px;
 }
 .herramienta {
   position: absolute;
@@ -275,7 +270,7 @@ strong {
 .seccion-precios {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
 }
 .precios {
   width: 350px;
@@ -300,7 +295,7 @@ font-size: 15px;
 .botones{
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
   padding: 40px 0 40px 0;
 }
 .botones-centrales{
