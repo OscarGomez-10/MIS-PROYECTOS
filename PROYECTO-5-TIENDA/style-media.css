@@ -1,0 +1,134 @@
+@media (min-width:1336px) and (max-width:1435px) {
+    header {
+        width: 80%;
+        flex-direction: column;
+        padding: 10px 0 20px 0;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 50px;
+    }
+
+    .contenedor-central-parte-2 {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .seccion-herramientas {
+        gap: 10px;
+    }
+
+    .seccion-precios {
+        gap: 10px;
+    }
+
+    .botones {
+        gap: 10px;
+    }
+}
+
+@media (max-width:1336px) {
+    header {
+        flex-direction: column;
+        padding: 10px 10px 20px 10px;
+    }
+
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 50px;
+    }
+
+    .buscador-general {
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+    .seccion-herramientas {
+
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    .seccion-precios {
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .botones {
+        justify-content: space-between;
+        gap: 40px;
+        padding: 40px 0 40px 0;
+    }
+
+    .img-herramienta-especial {
+        width: 250px;
+    }
+
+    .img-herramienta-1 {
+        width: 250px;
+    }
+
+    .precios {
+        width: 250px;
+    }
+
+    .botones-centrales {
+        width: 250px;
+    }
+}
+
+@media (max-width:1135px) {
+
+    header {
+        height: 100%;
+    }
+
+
+    .opciones {
+        gap: 12px;
+    }
+
+    .contenedor-central {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-central-parte-1 {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+
+    .contenedor-barra {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 85%;
+        margin-left: 0px;
+    }
+    .eti-filtro {
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    .eti-precio {
+        padding-left: 0px;
+    }
+    .eti-categorias {
+        padding-left: 0px;
+        
+    }
+    .eti-precio-productos {
+        padding-left: 0px;
+    }
+    .linea {
+        border: none;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+}
