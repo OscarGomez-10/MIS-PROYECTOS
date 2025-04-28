@@ -15,20 +15,35 @@
         <div class="img-fondo" style="background-image: url(img/img-fondo.png)">
             <div class="head">
                 <header>
-                    <h1>KONSTRUCT</h1>
+                    <h1 class="title">KONSTRUCT</h1>
                     <div class="opciones">
                         <p class="eti-head">HOME</p>
                         <p class="eti-head">FEATURES</p>
-                        <p class="eti-head">ABOUT US </p>
+                        <p class="eti-head">ABOUT US</p>
                         <p class="eti-head">OUR SERVICES</p>
                         <p class="eti-head">PROJECTS</p>
                         <p class="eti-head">BLOG</p>
                         <p class="eti-head">STORE</p>
                         <p class="eti-head">CONTACT</p>
-                        <hr>
-                        <i class="fa-solid fa-bars"></i>
                     </div>
-                    
+
+                    <div class="contenedor-boton-hamburguesa">
+                        <label class="menu-hamburguesa" for="boton-hamburguesa">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+                        <input class="boton-hamburguesa" type="checkbox" id="boton-hamburguesa">
+                        
+                        <ul class="lista">
+                            <li class="link">HOME</li>
+                            <li class="link">FEATURES</li>
+                            <li class="link">ABOUT US</li>
+                            <li class="link">OUR SERVICES</li>
+                            <li class="link">PROJECTS</li>
+                            <li class="link">BLOG</li>
+                            <li class="link">STORE</li>
+                            <li class="link">CONTACT</li>
+                        </ul>
                 </header>
             </div>
             <div class="titulos-head">
@@ -42,66 +57,71 @@
         </div>
         <div class="contenedor-central">
             <div class="contenedor-central-parte-1">
-                <div class="seccion-filtro">
-                    <div class="buscador-general">
+                <div class="contenedor-filtro-categorias">
+                    <div class="seccion-filtro">
+                        <div class="buscador-general">
     
-                        <div class="buscador">
-                            <input id="buscador" name="buscador" type="text" placeholder="Search products... ">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="buscador">
+                                <input id="buscador" name="buscador" type="text" placeholder="Search products... ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <h3 class="eti-filtro">FILTER BY PRICE</h3>
+                        <hr class="linea">
+                        <div class="contenedor-barra">
+                            <div class="barra"></div>
+                            <div class="circulo "></div>
+                            <div class="circulo "></div>
+                        </div>
+                        <div class="boton-precio">
+                            <h6 class="eti-precio">price : €12 - €35</h6>
+                            <button class="boton1">Filter</button>
                         </div>
                     </div>
-                    <h3 class="eti-filtro">FILTER BY PRICE</h3>
-                    <hr class="linea">
-                    <div class="contenedor-barra">
-                        <div class="barra"></div>
-                        <div class="circulo "></div>
-                        <div class="circulo "></div>
-                    </div>
-                    <div class="boton-precio">
-                        <h6 class="eti-precio">price : €12 - €35</h6>
-                        <button class="boton1">Filter</button>
-                    </div>
-                </div>
-                <div class="seccion-categorias">
-                    <h3 class="eti-filtro">CATEGORIES</h3>
-                    <hr class="linea">
-                    <div class="categorias">
-                        <h5 class="eti-categorias">Clothing (7)</h5>
-                        <hr class="linea-categorias">
-                    </div>
-                    <div class="categorias">
-                        <h5 class="eti-categorias">Hoodies (3)</h5>
-                        <hr class="linea-categorias">
-                    </div>
-                    <div class="categorias">
-                        <h5 class="eti-categorias">Posters (3) </h5>
-                        <hr class="linea-categorias">
-                    </div>
-                    <div class="categorias">
-                        <h5 class="eti-categorias"> T-shirts (4)</h5>
-                        <hr class="linea-categorias">
+                    <div class="seccion-categorias">
+                        <h3 class="eti-filtro">CATEGORIES</h3>
+                        <hr class="linea">
+                        <div class="categorias">
+                            <h5 class="eti-categorias">Clothing (7)</h5>
+                            <hr class="linea-categorias">
+                        </div>
+                        <div class="categorias">
+                            <h5 class="eti-categorias">Hoodies (3)</h5>
+                            <hr class="linea-categorias">
+                        </div>
+                        <div class="categorias">
+                            <h5 class="eti-categorias">Posters (3) </h5>
+                            <hr class="linea-categorias">
+                        </div>
+                        <div class="categorias">
+                            <h5 class="eti-categorias"> T-shirts (4)</h5>
+                            <hr class="linea-categorias">
+                        </div>
                     </div>
                 </div>
-                <div class="seccion-productos">
-                    <h3 class="eti-filtro">FEATURED PRODUCTS</h3>
-                    <hr class="linea">
-                    <div class="productos">
-                        <h5 class="eti-categorias">Flying Ninja</h5>
-                        <img src="img/premium-1.jpg" alt="">
+                <div class="contenedor-productos">
+
+                    <div class="seccion-productos">
+                        <h3 class="eti-filtro">FEATURED PRODUCTS</h3>
+                        <hr class="linea">
+                        <div class="productos">
+                            <h5 class="eti-categorias">Flying Ninja</h5>
+                            <img src="img/premium-1.jpg" alt="">
+                        </div>
+                        <h6 class="eti-precio-productos"> ̶€̶1̶5̶.̶0̶0̶€ <strong class="precio-rojo">€12.00</strong> </h6>
+                        <hr class="linea-categorias">
+                        <div class="productos">
+                            <h5 class="eti-categorias">Patient Ninja</h5>
+                            <img src="img/premium-2.jpg" alt="">
+                        </div>
+                        <h6 class="eti-precio-productos"> <strong class="precio-rojo">€35.00</strong> </h6>
+                        <hr class="linea-categorias">
+                        <div class="productos">
+                            <h5 class="eti-categorias">Premium Quality</h5>
+                            <img src="img/premium-3.jpg" alt="">
+                        </div>
+                        <h6 class="eti-precio-productos"><strong class="precio-rojo">€20.00</strong></h6>
                     </div>
-                    <h6 class="eti-precio-productos"> ̶€̶1̶5̶.̶0̶0̶€ <strong class="precio-rojo">€12.00</strong> </h6>
-                    <hr class="linea-categorias">
-                    <div class="productos">
-                        <h5 class="eti-categorias">Patient Ninja</h5>
-                        <img src="img/premium-2.jpg" alt="">
-                    </div>
-                    <h6 class="eti-precio-productos"> <strong class="precio-rojo">€35.00</strong> </h6>
-                    <hr class="linea-categorias">
-                    <div class="productos">
-                        <h5 class="eti-categorias">Premium Quality</h5>
-                        <img src="img/premium-3.jpg" alt="">
-                    </div>
-                    <h6 class="eti-precio-productos"><strong class="precio-rojo">€20.00</strong></h6>
                 </div>
             </div>
             <div class="contenedor-central-parte-2">
@@ -112,190 +132,218 @@
 
                 </div>
                 <div class="central-parte-2">
-                    <div class="seccion-herramientas">
-                        <div class="img-herramienta-especial">
-                            <div>
-                                <h5 class="palabra-diagonal">sale!</h5>
-                            </div>
-                            <img class="herramienta" src="img/img-1.png" alt="herramienta 1">
-                        </div>
-                        <div class="img-herramienta-1">
-                            <img class="herramienta" src="img/img-2.png" alt="herramienta 1">
-                        </div>
-                        <div class="img-herramienta-1">
-                            <img class="herramienta" src="img/img-3.png" alt="herramienta 1">
-                        </div>
-                    </div>
-                    <div class="seccion-precios">
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Flying Ninja</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6> ̶€̶1̶5̶.̶0̶0̶€ <strong class="precio-rojo">€12.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">☆</h6>
+                    <div class="contenedor-herramientas">
+                        <div class="seccion-herramientas">
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-especial">
+                                    <div>
+                                        <h5 class="palabra-diagonal">sale!</h5>
+                                    </div>
+                                    <img class="herramienta" src="img/img-1.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Flying Ninja</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6> ̶€̶1̶5̶.̶0̶0̶€ <strong class="precio-rojo">€12.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">☆</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Happy Ninja</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6><strong class="precio-rojo">€18.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Happy Ninja</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6><strong class="precio-rojo">€35.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">☆</h6>
-                                    <h6 class="estrella">☆</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="seccion-herramientas">
+                        <div class="seccion-herramientas">
 
-
-                        <div class="img-herramienta-1">
-                            <img class="herramienta" src="img/img-4.png" alt="herramienta 1">
-                        </div>
-
-                        <div class="img-herramienta-1">
-                            <img class="herramienta" src="img/img-5.png" alt="herramienta 1">
-                        </div>
-                        <div class="img-herramienta-1">
-                            <img class="herramienta" src="img/img-6.png" alt="herramienta 1">
-                        </div>
-                    </div>
-                    <div class="seccion-precios">
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Ninja Silhouette</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6> <strong class="precio-rojo">€20.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-1">
+                                    <img class="herramienta" src="img/img-2.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Happy Ninja</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6><strong class="precio-rojo">€18.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Ninja Silhouette</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6><strong class="precio-rojo">€35.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">☆</h6>
+                        <div class="seccion-herramientas">
+
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-1">
+                                    <img class="herramienta" src="img/img-3.png" alt="herramienta 1">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Patient Ninja</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6><strong class="precio-rojo">€35.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Happy Ninja</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6><strong class="precio-rojo">€35.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">☆</h6>
+                                            <h6 class="estrella">☆</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
-                    <div class="seccion-herramientas">
-                        <div class="img-herramienta-1">
-                            <img class="herramienta" src="img/img-7.png" alt="herramienta 1">
-                        </div>
-                        <div class="img-herramienta-especial">
-                            <div>
-                                <h5 class="palabra-diagonal">sale!</h5>
-                            </div>
-                            <img class="herramienta" src="img/img-8.png" alt="herramienta 1">
-                        </div>
-                        <div class="img-herramienta-1">
-                            <img class="herramienta" src="img/img-9.png" alt="herramienta 1">
-                        </div>
-                    </div>
-                    <div class="seccion-precios">
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Premium Quality</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6><strong class="precio-rojo">€20.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">☆</h6>
+                        <div class="seccion-herramientas">
+
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-1">
+                                    <img class="herramienta" src="img/img-4.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Ninja Silhouette</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6><strong class="precio-rojo">€20.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Premium Quality</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6> ̶€̶1̶5̶.̶0̶0̶€ <strong class="precio-rojo">€12.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">☆</h6>
-                                    <h6 class="estrella">☆</h6>
-                                    <h6 class="estrella">☆</h6>
+                        <div class="seccion-herramientas">
+
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-1">
+                                    <img class="herramienta" src="img/img-5.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Ninja Silhouette</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6><strong class="precio-rojo">€35.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">☆</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="precios">
-                            <h4 class="nombre-herramientas">Ship Your Idea</h4>
-                            <hr class="linea-herramientas">
-                            <div class="estrella-precio">
-                                <h6><strong class="precio-rojo">€20.00</strong> </h6>
-                                <div class="clasificacion">
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">★</h6>
-                                    <h6 class="estrella">☆</h6>
+                        <div class="seccion-herramientas">
+
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-1">
+                                    <img class="herramienta" src="img/img-6.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Patient Ninja</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6><strong class="precio-rojo">€35.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">☆</h6>
+                                            <h6 class="estrella">☆</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seccion-herramientas">
+
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-1">
+                                    <img class="herramienta" src="img/img-7.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Premium Ninja</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6> <strong class="precio-rojo">€20.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">☆</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seccion-herramientas">
+
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-especial">
+                                    <div>
+                                        <h5 class="palabra-diagonal">sale!</h5>
+                                    </div>
+                                    <img class="herramienta" src="img/img-1.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Happy Ninja</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6><strong class="precio-rojo">€18.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seccion-herramientas">
+                            <div class="precios-y-herramientas">
+                                <div class="img-herramienta-1">
+                                    <img class="herramienta" src="img/img-9.png" alt="herramienta 1">
+                                </div>
+                                <div class="precios">
+                                    <h4 class="nombre-herramientas">Happy Ninja</h4>
+                                    <hr class="linea-herramientas">
+                                    <div class="estrella-precio">
+                                        <h6><strong class="precio-rojo">€35.00</strong> </h6>
+                                        <div class="clasificacion">
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">★</h6>
+                                            <h6 class="estrella">☆</h6>
+                                            <h6 class="estrella">☆</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="botones">
-                    <div class="botones-centrales">
-                        <button class="boton-central-1">1</button>
-                        <button class="boton-central-1">2</button>
-                        <button class="boton-central-1">→</button>
+                    <div class="botones">
+                        <div class="botones-centrales">
+                            <button class="boton-central-1">1</button>
+                            <button class="boton-central-1">2</button>
+                            <button class="boton-central-1">→</button>
+                        </div>
                     </div>
-                    <div class="botones-centrales"></div>
-                    <div class="botones-centrales"></div>
                 </div>
             </div>
         </div>
