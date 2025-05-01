@@ -61,8 +61,6 @@
     }
 
     .botones {
-        justify-content: space-between;
-        gap: 40px;
         padding: 40px 0 40px 0;
     }
 
@@ -89,7 +87,6 @@
         height: 100%;
         width: 60%;
     }
-
 
     .opciones {
         display: grid;
@@ -151,7 +148,6 @@
     }
 }
 
-
 @media (max-width:830px) {
 
     header {
@@ -164,18 +160,31 @@
 
     .contenedor-central-parte-1 {
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .seccion-filtro {
         justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .contenedor-herramientas {
         grid-template-columns: 1fr 1fr;
     }
 
+    .cotenedor-productos {
+        grid-column: 1/3;
+    }
+
     .seccion-productos {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .seccion-categorias {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -183,12 +192,26 @@
         align-items: center;
     }
 
-    .contenedor-filtro-categorias {
-        gap: 150px;
+    .linea-categorias {
+        width: 100%;
     }
 
-    .contenedor-productos {
+    .boton-precio {
+        gap: 20px;
+    }
+
+    .boton1 {
+        width: 100%;
+    }
+
+    .botones {
+        text-align: center;
         justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-filtro-categorias {
+        gap: 150px;
     }
 
     .linea-categorias {
@@ -201,20 +224,22 @@
 
     .footer {
         grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
     }
 
 }
+
 
 @media (max-width:570px) {
     header {
         flex-direction: row;
         gap: 20px;
         justify-content: space-around;
-        width: 50%;
+        width: 70%;
         flex-wrap: wrap;
         position: relative;
     }
-
     .opciones {
         display: none;
     }
@@ -237,18 +262,13 @@
     }
 
     .lista {
-        list-style: none;
-        display: none;
-        padding: 0px;
-        gap: 5px;
-        position: absolute;
-        top: 70px;
         width: 100%;
         background-color: white;
     }
 
-    li:hover {
-        color: #f4c40c;
+    .contenedor-central-parte-1 {
+        display: flex;
+        flex-direction: column;
     }
 
     .contenedor-filtro-categorias {
@@ -274,10 +294,25 @@
         align-items: center;
     }
 
+    .seccion-productos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secion-productos,
+    .linea-categorias {
+        width: 60%;
+    }
+
     .linea-categorias {
         width: 100%;
     }
 
+    .linea-productos {
+        width: 40%;
+    }
+    
     .contenedor-herramientas {
         grid-template-columns: 1fr;
     }
@@ -292,5 +327,12 @@
 
     .title {
         font-size: 20px;
+    }
+    .contenedor-barra{
+        width: 50%;
+    }
+    .central-parte-1{
+    flex-direction: column;
+    gap: 20px;
     }
 }
