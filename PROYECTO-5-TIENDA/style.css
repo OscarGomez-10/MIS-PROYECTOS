@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* ________________________________________________encabezado_______________________ */
@@ -131,7 +133,7 @@ display: none;
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 60%;
+  width: 72%;
   margin-left: 30px;
 }
 
@@ -213,6 +215,12 @@ display: none;
   margin-left: 30px;
   margin-bottom: 10px;
   width: 60%;
+}
+.linea-productos{
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 60%;
+  
 }
 
 .precio-rojo {
