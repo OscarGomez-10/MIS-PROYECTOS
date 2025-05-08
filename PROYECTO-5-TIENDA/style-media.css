@@ -335,4 +335,7 @@
     flex-direction: column;
     gap: 20px;
     }
+    .footer{
+        padding:0px;
+    }
 }
