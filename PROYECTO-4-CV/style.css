@@ -26,6 +26,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding: 10px 0 10px 0;
 }
 
 .head-derecha-parte-1 {
