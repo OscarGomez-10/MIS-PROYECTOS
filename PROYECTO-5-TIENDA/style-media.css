@@ -335,5 +335,7 @@
     flex-direction: column;
     gap: 20px;
     }
-    
+    .contenedor-central-parte-2{
+    padding: 0px;
+    }
 }
