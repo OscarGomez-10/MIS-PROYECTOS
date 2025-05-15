@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -15,7 +14,7 @@
 .head {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+
 }
 
 .titulo {
@@ -29,11 +28,8 @@ header {
   text-align: center;
   padding-left: 50px;
   height: 80px;
-  background: linear-gradient(130deg,
-      white 98%,
-      transparent 0,
-      1%,
-      #f4c40c 100%);
+  background: linear-gradient(130deg, white 98%, transparent 0, 1%, #f4c40c 100%);
+  width: 96%;
 }
 
 .opciones {
@@ -41,10 +37,10 @@ header {
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
-  gap: 50px;
+  gap: 80px;
 }
 
-.eti-head:hover {
+.opciones p:hover {
   color: #f4c40c;
 }
 
@@ -71,25 +67,25 @@ strong {
   height: 40px;
   padding-left: 75px;
   padding-right: 75px;
-  background: linear-gradient(130deg,
-      transparent 20%,
-      #f4c40c 10%,
-      #f4c40c 80%,
-      transparent 20%);
+  background: linear-gradient(130deg, transparent 20%, #f4c40c 10%, #f4c40c 80%, transparent 20%);
 }
-.contenedor-boton-hamburguesa{
-display: none;
+
+.contenedor-boton-hamburguesa {
+  display: none;
 }
+
 .boton-hamburguesa {
   display: none;
 }
 
-.menu-hambuerguesa {
+.lista {
   display: none;
 }
-.lista{
-  display: none;
+
+.lista p:hover {
+  color: #f4c40c;
 }
+
 /* ___________________________________contenedor central_______________ */
 .contenedor-central {
   display: grid;
@@ -172,6 +168,16 @@ display: none;
   margin-bottom: 30px;
 }
 
+.linea-productos-1 {
+  width: 10%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
 .eti-precio {
   padding-left: 30px;
   padding-top: 20px;
@@ -216,11 +222,12 @@ display: none;
   margin-bottom: 10px;
   width: 60%;
 }
-.linea-productos{
+
+.linea-productos {
   margin-left: 30px;
   margin-bottom: 10px;
   width: 60%;
-  
+
 }
 
 .precio-rojo {
@@ -230,21 +237,29 @@ display: none;
 
 /* ___________________________________contenedor central parte 2_______________________________________ */
 .contenedor-central-parte-2 {
-  padding: 0px 30px 0px 30px;
   background-color: white;
+  padding: 0 30px 0 30px;
+}
+
+
+.centrar {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contenedor-herramientas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 165px;
 }
 
 .central-parte-1 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 0 0;
-  align-items: center;
+  padding-top: 40px;
 }
+
 
 .input-parte-1 {
   height: 40px;
@@ -260,15 +275,13 @@ display: none;
 
 .seccion-herramientas {
   display: flex;
-  gap: 40px;
-  justify-content: center;
   padding-top: 50px;
 }
 
 .img-herramienta-especial {
   width: 350px;
   position: relative;
-  border: 1px solid #928080;
+  border: 1px solid #ebebeb;
   background: linear-gradient(310deg, white 88%, transparent 0, 1%, #f4c40c 12%);
   height: 250px;
 }
@@ -284,7 +297,7 @@ display: none;
 .img-herramienta-1 {
   width: 350px;
   position: relative;
-  border: 1px solid #928080;
+  border: 1px solid #ebebeb;
   height: 250px;
 }
 
@@ -323,6 +336,7 @@ display: none;
 
 .linea-herramientas {
   margin: 10px 0 10px 0;
+  border: 1px solid #ebebeb
 }
 
 .nombre-herramientas {
@@ -332,7 +346,7 @@ display: none;
 .botones {
   display: flex;
   gap: 40px;
-  padding: 40px 0 40px 40px;
+  padding: 40px 0 40px 0px;
 }
 
 .botones-centrales {
@@ -372,7 +386,7 @@ display: none;
 .footer-parte-1 {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
 }
 
 .parrafo-footer {
@@ -396,7 +410,7 @@ display: none;
 }
 
 .input-footer {
-  width: 100%;
+  width: 98%;
   background-color: #242424;
   border: none;
   color: #979797;
