@@ -148,6 +148,10 @@ h2 {
         order: 2;
     }
 
+    .contenedor-card .esa:nth-child(3) {
+        order: 2;
+    }
+
     .esta {
         display: contents;
     }
@@ -212,4 +216,26 @@ h2 {
         height: 250px;
     }
 
+}
+
+@media(max-width:500px) {
+    .img-titulo {
+        height: 100px;
+    }
+
+    .textos {
+        font-size: 18px;
+    }
+
+    .card-estadisticas {
+        width: 90%;
+    }
+
+    .card-datos {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
