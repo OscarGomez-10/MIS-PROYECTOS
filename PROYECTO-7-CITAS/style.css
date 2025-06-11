@@ -1,0 +1,117 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+}
+
+.contenedor-central {
+    align-items: center;
+}
+
+.sintomas {
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0
+}
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.select {
+    width: 200px !important;
+}
+
+.buscador {
+    width: 300px !important;
+}
+
+.estado-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-agenda {
+    background-color: green !important;
+    height: 55px;
+    border-color: green !important;
+}
+
+
+.btn-cerrar {
+    background-color: rgb(195, 4, 4) !important;
+
+}
+
+.nombre-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nombre-propietario {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-guardar {
+    background-color: green !important;
+}
+
+.btn-eliminate {
+    background-color: rgb(195, 4, 4) !important;
+    height: 60px;
+
+
+}
+
+.btn-edit {
+    background-color: green !important;
+    height: 60px;
+    padding: 5px;
+    width: 80px;
+}
+
+.targeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card2 {
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.img-animals {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+}
+
+.icono {
+    font-size: 50px;
+}
+
+.modal-header {
+    background-color: green;
+    color: white;
+}
