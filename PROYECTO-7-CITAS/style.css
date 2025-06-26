@@ -3,9 +3,11 @@
 
 }
 
+
 /* ----------------------------------------HEADER Y FOOTER---------------------------------------- */
 header {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -21,14 +23,14 @@ footer {
     text-align: center;
     color: white;
     border-radius: 10px;
-    position: sticky;
-    bottom: 0;
     z-index: 1020;
 }
-h4{
-margin-bottom: 0px !important;
-line-height: normal !important;
+
+h4 {
+    margin-bottom: 0px !important;
+    line-height: normal !important;
 }
+
 /* ----------------------------------------BOTONES---------------------------------------- */
 .btn-agenda,
 .btn-guardar,
@@ -58,7 +60,9 @@ line-height: normal !important;
     padding-top: 20px;
     margin: 10px 0;
 }
-
+.card{
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3) !important;
+}
 /* ----------------------------------------FORMULARIO Y FILTROS---------------------------------------- */
 .select {
     width: 200px !important;
