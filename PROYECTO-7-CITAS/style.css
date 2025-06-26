@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 /* ----------------------------------------HEADER Y FOOTER---------------------------------------- */
@@ -11,21 +12,23 @@ header {
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 20px;
-    background-color: green;
+    background-color: #008000;
     color: white;
 }
 
 footer {
     background-color: green !important;
     text-align: center;
-    margin-top: 20px;
     color: white;
     border-radius: 10px;
-    position: fixed;
-    width: 98.6%;
+    position: sticky;
     bottom: 0;
+    z-index: 1020;
 }
-
+h4{
+margin-bottom: 0px !important;
+line-height: normal !important;
+}
 /* ----------------------------------------BOTONES---------------------------------------- */
 .btn-agenda,
 .btn-guardar,
@@ -39,7 +42,7 @@ footer {
 .btn-cerrar,
 .btn-eliminate,
 .btn-danger {
-    background-color: rgb(195, 4, 4) !important;
+    background-color: #c30404 !important;
 }
 
 .btn-edit,
@@ -50,12 +53,7 @@ footer {
 }
 
 /* ----------------------------------------CONTENEDORES Y ESTRUCTURA---------------------------------------- */
-.container-fluid {
-    padding-bottom: 60px;
-}
-
 .contenedor-formulario {
-    display: flex;
     justify-content: space-between;
     padding-top: 20px;
     margin: 10px 0;
@@ -72,7 +70,8 @@ footer {
 
 /* ---------------------- ESTILOS DE FOCUS EN FORMULARIOS ---------------------- */
 .form-control:focus,
-.form-select:focus {
+.form-select:focus,
+.btn-agenda:focus {
     border-color: #4ade80 !important;
     box-shadow: 0 0 0 0.25rem rgba(74, 222, 128, 0.25) !important;
     outline: none !important;
@@ -87,4 +86,15 @@ footer {
 /* ----------------------------------------ICONO DEL HEADER---------------------------------------- */
 .icono {
     font-size: 50px;
+}
+
+
+/* -------------------------------------------@MEDIA-------------------------------------------------- */
+
+@media (max-width:700px) {
+    .contenedor-formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
