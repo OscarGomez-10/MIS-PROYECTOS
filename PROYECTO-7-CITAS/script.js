@@ -7,7 +7,7 @@ let option = 0;
 let pos = null;
 
 const animals = [
-    { type: "noaplica", src: "img/pregunta.avif" },
+    { type: "noaplica" || "", src: "img/pregunta.avif" },
     { type: "perro", src: "img/perro.jpg" },
     { type: "gato", src: "img/gato.jpg" },
     { type: "cocodrilo", src: "img/cocodrilo.jpg" },
@@ -44,19 +44,41 @@ const saveQuotes = () => {
             clean();
             myModal.toggle();
         } else if (option == 1) {
-            dataArray[pos].namePet = document.getElementById("nombre-mascota").value.toUpperCase();
-            dataArray[pos].nameowner = document.getElementById("propietario").value.toUpperCase();
-            dataArray[pos].phone = document.getElementById("telefono").value;
-            dataArray[pos].date = document.getElementById("fecha").value;
-            dataArray[pos].hour = document.getElementById("hora").value;
-            dataArray[pos].pet = document.getElementById("opcion").value;
-            dataArray[pos].symptom = document.getElementById("sintomas").value.toUpperCase();
-            localStorage.setItem(`citas`, JSON.stringify(dataArray));
-            showQuotes();
-            clean();
-            option = 0;
-            myModal.hide();
-            document.getElementById("btn-save").textContent = "GUARDAR";
+            if (option == 1) {
+                Swal.fire({
+                    title: "¿Confirmar edición?",
+                    text: "¿Estás seguro de guardar los cambios?",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#008000",
+                    cancelButtonColor: "#c30404",
+                    confirmButtonText: "Sí, editar"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        dataArray[pos].namePet = document.getElementById("nombre-mascota").value.toUpperCase();
+                        dataArray[pos].nameowner = document.getElementById("propietario").value.toUpperCase();
+                        dataArray[pos].phone = document.getElementById("telefono").value;
+                        dataArray[pos].date = document.getElementById("fecha").value;
+                        dataArray[pos].hour = document.getElementById("hora").value;
+                        dataArray[pos].pet = document.getElementById("opcion").value;
+                        dataArray[pos].symptom = document.getElementById("sintomas").value.toUpperCase();
+                        localStorage.setItem(`citas`, JSON.stringify(dataArray));
+                        showQuotes();
+                        clean();
+                        option = 0;
+                        myModal.hide();
+                        document.getElementById("btn-save").textContent = "GUARDAR";
+
+                        Swal.fire({
+                            title: "¡Editado!",
+                            text: "Los datos han sido actualizados.",
+                            icon: "success",
+                            confirmButtonColor: "#008000",
+                        });
+                    }
+                });
+            }
+
         }
     } else {
         console.log("error en las validaciones");
@@ -66,14 +88,17 @@ const saveQuotes = () => {
 /* ----------------------------------------MOSTRAR CITAS---------------------------------------- */
 const showQuotes = (busca) => {
     const quotes = busca || JSON.parse(localStorage.getItem('citas') || `[]`);
-    quotes.sort((a, b) =>{
-    let date1=new Date(`${a.date}T${a.hour}`)
-    let date2=new Date(`${b.date}T${b.hour}`)
-    return date1- date2
+    quotes.sort((a, b) => {
+        let date1 = new Date(`${a.date}T${a.hour}`)
+        let date2 = new Date(`${b.date}T${b.hour}`)
+        return date1 - date2
     });
     document.getElementById("card").textContent = " ";
+
     quotes.forEach((elemento, i) => {
-        let animal = animals.find((element) => element.type == elemento.pet);
+
+        let animal = animals.find((element) => element.type === elemento.pet || "")
+
         document.getElementById("card").innerHTML += `
           <div class="col-md-4">
   <div class="card shadow-lg p-3 mb-4 rounded-4">
@@ -108,12 +133,12 @@ const showQuotes = (busca) => {
 
       <!-- Botones debajo del estado -->
       <div class="d-flex justify-content-center gap-3 mb-2">
-        <button type="button" class="btn btn-success btn-edit ">EDIT</button>
-        <button type="button" class="btn btn-danger btn-eliminate ">DELETE</button>
+        <button type="button" class="btn btn-success btn-edit ">EDITAR</button>
+        <button type="button" class="btn btn-danger btn-eliminate px-1">ELIMINAR</button>
       </div>
 
       <!-- ID -->
-      <p class="text-muted mt-2 mb-0 text-center"><small>ID: ${elemento.numberQuotes}</small></p>
+      <p class="text-muted mt-2 mb-0 text-center"><small>${elemento.numberQuotes}</small></p>
     </div>
   </div>
 </div>
@@ -124,15 +149,34 @@ const showQuotes = (busca) => {
     const btnEliminate = document.querySelectorAll(".btn-eliminate");
     btnEliminate.forEach((eliminate, index) => {
         eliminate.addEventListener("click", () => {
-            const quoteToDelete = quotes[index];
-            const id = quoteToDelete.numberQuotes;
-            const allQuotes = JSON.parse(localStorage.getItem('citas') || '[]');
-            const updatedQuotes = allQuotes.filter(q => q.numberQuotes !== id);
-            localStorage.setItem("citas", JSON.stringify(updatedQuotes));
-            showQuotes();
-            clean();
+            Swal.fire({
+                title: "¿Estás seguro?",
+                text: "Esta acción eliminará la cita permanentemente.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#008000",
+                cancelButtonColor: "#c30404",
+                confirmButtonText: "Sí, eliminar"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const quoteToDelete = quotes[index];
+                    const id = quoteToDelete.numberQuotes;
+                    const allQuotes = JSON.parse(localStorage.getItem('citas') || '[]');
+                    const updatedQuotes = allQuotes.filter(q => q.numberQuotes !== id);
+                    localStorage.setItem("citas", JSON.stringify(updatedQuotes));
+                    showQuotes();
+                    clean();
+                    Swal.fire({
+                        title: "¡Eliminado!",
+                        text: "La cita ha sido eliminada.",
+                        icon: "success",
+                        confirmButtonColor: "#008000",
+                    });
+                }
+            });
         });
     });
+
 
     /* ----------------------------------------EDITAR CITA---------------------------------------- */
     const btnEdit = document.querySelectorAll(".btn-edit");
@@ -149,7 +193,7 @@ const showQuotes = (busca) => {
             document.getElementById("hora").value = quote.hour;
             document.getElementById("opcion").value = quote.pet;
             document.getElementById("sintomas").value = quote.symptom;
-            document.getElementById("btn-save").textContent = "EDIT";
+            document.getElementById("btn-save").textContent = "EDITAR";
             option = 1;
             myModal.toggle();
             return pos;
@@ -189,7 +233,7 @@ const filterByName = () => {
     const quotes = JSON.parse(localStorage.getItem('citas') || `[]`);
     let name = document.getElementById("buscador").value;
     const busca = quotes.filter((element) =>
-        element.namePet.includes(name) || element.nameowner.includes(name)
+        element.namePet.includes(name.toUpperCase()) || element.nameowner.includes(name.toUpperCase())
     );
     if (busca.length > 0) {
         showQuotes(busca);
@@ -218,18 +262,22 @@ const validations = () => {
     validation = false;
 
     if (document.getElementById("nombre-mascota").value == "") {
-        Swal.fire({ text: "INSERTE EL NOMBRE DE LA MASCOTA", icon: "question" });
+        Swal.fire({ text: "INSERTE EL NOMBRE DE LA MASCOTA", icon: "question", confirmButtonColor: "#008000", });
     } else if (document.getElementById("propietario").value == "") {
-        Swal.fire({ text: "INSERTE NOMBRE DEL PROPIETARIO", icon: "question" });
+        Swal.fire({ text: "INSERTE NOMBRE DEL PROPIETARIO", icon: "question", confirmButtonColor: "#008000", });
     } else if (phone == "" || phone.length > 10 || phone.length < 10) {
-        Swal.fire({ text: "INSERTE SU TELEFONO ", icon: "question" });
+        Swal.fire({ text: "POR FAVOR, INGRESE SU NÚMERO DE CELULAR (MÁX. 10 DÍGITOS)", icon: "question", confirmButtonColor: "#008000", });
     } else if (date == "" || new Date(date) < datetoday) {
-        Swal.fire({ text: "INSERTE UNA FECHA CORRECTA", icon: "question" });
+        Swal.fire({ text: "INSERTE UNA FECHA CORRECTA", icon: "question", confirmButtonColor: "#008000", });
     } else if (hour == "" || hour < "08:00" || hour > "20:00") {
-        Swal.fire({ text: "INSERTE UNA HORA DENTRO DEL HORARIO 08:00 AM A 08:00 PM", icon: "question" });
+        Swal.fire({ text: "INSERTE UNA HORA DENTRO DEL HORARIO 08:00 AM A 08:00 PM", icon: "question", confirmButtonColor: "#008000", });
     } else if (document.getElementById("sintomas").value == "") {
-        Swal.fire({ text: "INSERTE LOS SINTOMAS DE SU MASCOTA", icon: "question" });
-    } else {
+        Swal.fire({ text: "INSERTE LOS SINTOMAS DE SU MASCOTA", icon: "question", confirmButtonColor: "#008000", });
+    }
+    else if (document.getElementById("sintomas").value.length > 400) {
+        Swal.fire({ text: "SÓLO SE PERMITEN HASTA 400 CARACTERES EN SÍNTOMAS", icon: "warning", confirmButtonColor: "#008000", });
+    }
+    else {
         validation = true;
     }
 }
