@@ -101,7 +101,7 @@ const showQuotes = (busca) => {
 
         document.getElementById("card").innerHTML += `
           <div class="col-md-4">
-  <div class="card shadow-lg p-3 mb-4 rounded-4">
+  <div class="card  p-3 mb-4 rounded-4">
     <div class="row g-0 align-items-center">
       <div class="col-4 text-center">
         <img src="${animal.src}" alt="Animal" class="img-fluid rounded-start" style="height: 100px; width:100px">
@@ -138,7 +138,7 @@ const showQuotes = (busca) => {
       </div>
 
       <!-- ID -->
-      <p class="text-muted mt-2 mb-0 text-center"><small>${elemento.numberQuotes}</small></p>
+      <p class="text-muted  mt-2 mb-0 text-center"><small>${elemento.numberQuotes}</small></p>
     </div>
   </div>
 </div>
