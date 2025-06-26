@@ -24,7 +24,7 @@
         <div class="contenedor-central">
 
             <!-- ----------------------------------------FORMULARIO DE FILTROS Y BOTÓN DE CITA---------------------------------------- -->
-            <div class="contenedor-formulario">
+            <div class="contenedor-formulario d-flex">
 
                 <!-- Filtro por estado -->
                 <div class="form-floating mb-3">
@@ -38,13 +38,13 @@
                 </div>
 
                 <!-- Buscador por nombre -->
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-3 ">
                     <input type="text" class="form-control buscador" id="buscador" placeholder="nombre-mascota">
                     <label for="buscador">NOMBRE DE LA MASCOTA</label>
                 </div>
 
                 <!-- Botón para agendar una nueva cita -->
-                <button type="button" class="btn btn-primary btn-agenda" data-bs-toggle="modal"
+                <button type="button" class="btn btn-primary btn-agenda  mb-3" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     ¡AGENDA!
                 </button>
@@ -114,7 +114,7 @@
                         <!-- Selección de tipo de animal -->
                         <div class="form-floating mb-3">
                             <select class="form-select" id="opcion" aria-label="Selecciona una opción">
-                                <option value="noaplica">NO APLICA</option>
+                                <option value="noaplica" selected>NO APLICA</option>
                                 <option value="perro">PERRO</option>
                                 <option value="gato">GATO</option>
                                 <option value="ardilla">ARDILLA</option>
@@ -149,7 +149,7 @@
 
         <!-- ----------------------------------------FOOTER---------------------------------------- -->
         <footer>
-            <h4>Copiti - Todos los derechos reservados © Oscar Gomez</h4>
+            <h4>Todos los derechos reservados - © Oscar Gomez</h4>
         </footer>
     </div>
 
