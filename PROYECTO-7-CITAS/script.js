@@ -100,8 +100,9 @@ const showQuotes = (busca) => {
         let animal = animals.find((element) => element.type === elemento.pet || "")
 
         document.getElementById("card").innerHTML += `
-          <div class="col-md-4">
-  <div class="card  p-3 mb-4 rounded-4">
+        <div class="col-md-4">
+  <div class="card p-3 mb-4 rounded-4 position-relative">
+    <span class="numero-cita">${elemento.numberQuotes}</span>
     <div class="row g-0 align-items-center">
       <div class="col-4 text-center">
         <img src="${animal.src}" alt="Animal" class="img-fluid rounded-start" style="height: 100px; width:100px">
@@ -121,7 +122,6 @@ const showQuotes = (busca) => {
       <p class="mb-1"><strong>MASCOTA:</strong> ${elemento.pet}</p>
       <p class="mb-1"><strong>SINTOMA:</strong> ${elemento.symptom}</p>
      
-      <!-- Estado -->
       <div class="form-floating mb-3">
         <select class="form-select state" id="estado-${elemento.numberQuotes}">
           <option value="ABIERTA">ABIERTA</option>
@@ -131,18 +131,15 @@ const showQuotes = (busca) => {
         <label for="estado-${elemento.numberQuotes}">ESTADO</label>
       </div>
 
-      <!-- Botones debajo del estado -->
       <div class="d-flex justify-content-center gap-3 mb-2">
         <button type="button" class="btn btn-success btn-edit ">EDITAR</button>
         <button type="button" class="btn btn-danger btn-eliminate px-1">ELIMINAR</button>
       </div>
-
-      <!-- ID -->
-      <p class="text-muted  mt-2 mb-0 text-center"><small>${elemento.numberQuotes}</small></p>
     </div>
   </div>
-</div>
-`;
+</div>`
+
+            ;
     });
 
     /* ----------------------------------------ELIMINAR CITA---------------------------------------- */
