@@ -21,6 +21,10 @@ const animals = [
 ]
 
 /* ----------------------------------------GUARDAR CITA (NUEVA O EDITADA)---------------------------------------- */
+myModalElement.addEventListener('hidden.bs.modal', () => {
+    clean();
+    option = 0; 
+});
 const saveQuotes = () => {
     dataArray = JSON.parse(localStorage.getItem('citas') || `[]`);
     validations();
